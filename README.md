@@ -2,7 +2,7 @@
 
 
 
-This bot is built on top of the TgFancy framework - a neat and simple Node.Js framework to interact with telegram's bot api. Uses the genius api and scrapes results to send lyrics and also integrates the [SMLoadr.js]() module for its download song feature. All logs are sent to a firebase backend.
+This bot is built on top of the TgFancy framework - a neat and simple Node.Js framework to interact with telegram's bot api. Uses the genius api and scrapes results to send lyrics and also integrates the [SMLoadr.js](https://github.com/mrmazakblu/SMLoader)module for its download song feature. All logs are sent to a firebase backend.
 
 ## Usage
 
