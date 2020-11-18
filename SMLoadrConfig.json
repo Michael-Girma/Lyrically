@@ -1,0 +1,9 @@
+{
+    "naming": {
+        "path": "DOWNLOADS/",
+        "discPath": "%path%/Disc %disc%",
+        "albumName": "%album% (%type%)",
+        "fileName": "%title%"
+    },
+    "arl": "arl cookie goes here"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "lyrically",
+  "version": "1.0.0",
+  "description": "A telegram bot that scrapes lyrics from genius and downloads songs from deezer",
+  "main": "listeners.js",
+  "scripts": {
+    "test": "node ./src/listeners.js",
+    "start": "node ./src/listeners.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-Girma/Lyrically.git"
+  },
+  "author": "Michael-Girma",
+  "engines": {
+    "node": "=12.14.1",
+    "npm": "=6.14.8"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "cache-manager": "^3.3.0",
+    "chalk": "^4.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "child_process": "^1.0.2",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.0",
+    "express": "^4.17.1",
+    "firebase": "^7.21.0",
+    "http": "0.0.1-security",
+    "inquirer": "^7.1.0",
+    "jsonfile": "^6.0.1",
+    "openurl": "^1.1.1",
+    "ora": "^4.0.4",
+    "request": "^2.88.2",
+    "request-plus": "^2.0.0",
+    "sanitize-filename": "^1.6.3",
+    "telebot": "^1.4.1",
+    "tgfancy": "^0.13.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.9"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael-Girma/Lyrically/issues"
+  },
+  "homepage": "https://github.com/Michael-Girma/Lyrically#readme"
+}
