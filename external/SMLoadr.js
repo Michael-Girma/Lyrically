@@ -5,24 +5,24 @@ const sanitize = require('sanitize-filename');
 const cacheManager = require('cache-manager');
 require('./node_modules/cache-manager/lib/stores/memory');
 const requestPlus = require('request-plus');
-const id3Writer = require('./libs/browser-id3-writer');
-const flacMetadata = require('./libs/flac-metadata');
+const id3Writer = require('../libs/browser-id3-writer');
+const flacMetadata = require('../libs/flac-metadata');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const stream = require('stream');
 const nodePath = require('path');
-const memoryStats = require('./libs/node-memory-stats');
+const memoryStats = require('../libs/node-memory-stats');
 const commandLineArgs = require('command-line-args');
 const commandLineUsage = require('command-line-usage');
 const openUrl = require('openurl');
-const packageJson = require('./package.json');
+const packageJson = require('../package.json');
 const winston = require('winston');
 
-const configFile = 'SMLoadrConfig.json';
-const ConfigService = require('./src/service/ConfigService');
+const configFile = 'SMLoadrConfig';
+const ConfigService = require('../src/service/ConfigService');
 let configService = new ConfigService(configFile);
 
-const EncryptionService = require('./src/service/EncryptionService');
+const EncryptionService = require('../src/service/EncryptionService');
 let encryptionService = new EncryptionService();
 
 let DOWNLOAD_DIR = 'DOWNLOADS/';

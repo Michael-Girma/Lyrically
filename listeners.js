@@ -6,8 +6,8 @@ const app = express()
 
 const message = require('./message')
 const utils = require('./utils')
-const genius = require('./Genius')
-const deezer = require('./Deezer')
+const genius = require('./genius')
+const deezer = require('./deezer')
 const keyboards = require('./keyboards')
 const {
     db,
@@ -16,7 +16,7 @@ const {
 } = require("./database")
 
 const Port = process.env.PORT || 3000
-const token = 'BOT TOKEN GOES HERE'
+const token = process.env.BOT_TOKEN //token goes here
 const bot = new Tgfancy(token, {
     polling: true,
     tgfancy: {
@@ -27,7 +27,7 @@ const bot = new Tgfancy(token, {
 
 
 const MAX_MESSAGE_SIZE = 4095
-const BOT_URL = 't.me/lyricBot'
+const BOT_URL = process.env.BOT_URL
 const DESCRIPTION = 'Okay press "Try inline search" to search for lyrics or Hit "Download a song" and type in a song title to search for the track. You can also just type in a song title and I\'ll get you the popular hit.'
 
 

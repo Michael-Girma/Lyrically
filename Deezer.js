@@ -26,7 +26,7 @@ async function search(title) {
 async function downloadFromDeezer(ripUrl, chatId) {
     console.log('Downloading [X]' + ripUrl + 'for chatId' + chatId)
     try {
-        await utils.sh(`node SMLoadr.js -u "${ripUrl}" -p ${chatId}`);
+        await utils.sh(`node ./external/SMLoadr.js -u "${ripUrl}" -p ${chatId}`);
     } catch (err) {
         console.log(err)
     } finally {
@@ -40,7 +40,7 @@ async function downloadTrackById(id, title, chatId) {
     link = `https://www.deezer.com/track/${id}`
     console.log('[X] downloading ' + link)
     path = await downloadFromDeezer(link, chatId)
-    const files = fs.readdirSync(`./${chatId}/`)
+    const files = fs.readdirSync(`./external/${chatId}/`)
     var filename = ""
     files.forEach(file => {
         if (file.endsWith(".mp3")) {
