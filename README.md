@@ -10,7 +10,13 @@ This bot is built on top of the TgFancy framework - a neat and simple Node.Js fr
 
 #### Initialization
 
-Place your arl cookie in the SMLoadrConfig.json file or simply run ```node SMLoadr.js``` in the command line for a wizard option. Make sure you have stored the configuration json inside the **database.js** found in the root directory. Once done with these, place your bot token in the **listeners.js** and everything should be fine.
+Code expects a couple of environment variables to be set.
+
+- BOT_URL: the url to your bot that appears under messages
+- BOT_TOKEN: the token to the bot obtained from botfather
+- ARL_COOKIE: the cookie to a logged in deezer instance for downloading music from deezer
+
+Make sure you have stored the configuration json inside the ```/secrets/firebase-config.json```. Once all this are set, run ```npm start``` to get the bot up and running
 
 #### Deployment
 
