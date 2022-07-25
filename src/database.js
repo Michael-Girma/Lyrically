@@ -1,6 +1,6 @@
 var firebase = require("firebase/app");
 require("firebase/firestore");
-const firebaseConfig = {} //replace this with the config json
+const firebaseConfig = require("../secrets/firebase-config")
 
 firebase.initializeApp(firebaseConfig);
 
