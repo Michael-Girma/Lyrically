@@ -1,9 +1,9 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const keyboards = require('./keyboards')
+const keyboards = require('../helpers/keyboards')
 const GENIUS_URL = 'https://genius.com'
 const GENIUS_FLAG = '-Genius:'
-const utils = require("./utils")
+const utils = require("../helpers/utils")
 
 async function geniusInstance() {
     const secretKey = 'A-M3uzyKxsuluUPKOA_JF-MOxDK4ZXTUPpo3oL2lkDDrT4gfDW0RpK_KbyHfO6U3';

@@ -4,16 +4,16 @@ const Tgfancy = require('tgfancy')
 const express = require('express')
 const app = express()
 
-const message = require('./message')
-const utils = require('./utils')
-const genius = require('./genius')
-const deezer = require('./deezer')
-const keyboards = require('./keyboards')
+const message = require('./helpers/message')
+const utils = require('./helpers/utils')
+const genius = require('./api/genius')
+const deezer = require('./api/deezer')
+const keyboards = require('./helpers/keyboards')
 const {
     db,
     addUserToDb,
     editUserStats
-} = require("./database")
+} = require("./db/database")
 
 const Port = process.env.PORT || 3000
 const token = process.env.BOT_TOKEN //token goes here

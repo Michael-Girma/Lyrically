@@ -1,6 +1,6 @@
 const axios = require('axios')
-const utils = require('./utils')
-const keyboards = require('./keyboards.js')
+const utils = require('../helpers/utils')
+const keyboards = require('../helpers/keyboards.js')
 const fs = require('fs');
 const { encode } = require('punycode');
 
